@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>ALOHA 2</title>
+    <title>ALOHA 2: An Enhanced Low-Cost Hardware for Bimanual Teleoperation</title>
 
     <meta name="description" content="ALOHA 2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,10 +43,14 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
 	
+    <script src="js/app.js"></script>
     <style>
         .nav-pills {
           position: relative;
@@ -57,16 +61,26 @@
           top: 0;
           left: 0;
         }
+        .bold {
+            font-weight: bold;
+        }
+        .title {
+            padding: 40px;
+            font: DM-Sans;
+        }
+        .carousel-image {
+            max-height: 800px;
+            width: auto;
+        }
     </style>
 </head>
 
 <body>
     <div class="container" id="main">
         
-        <div class="row">
-            <p></p> <p></p>
+        <div class="row title">
             <div class="col-md-12 text-center">
-                <strong><font size="+3">ALOHA 2</font></strong> 
+                <strong><font size="+3">ALOHA 2: An Enhanced Low-Cost Hardware for Bimanual Teleoperation</font></strong> 
             </div>
         </div>
         <div class="row">
@@ -74,45 +88,147 @@
                 
                 <ul class="list-inline">
                     <br>
-                    
+                <li class="bold">
+                    ALOHA 2 Team
+                </li>
+                <li>
+                    Jorge Aldeco
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Travis Armstrong
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Robert Baruch
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Jeff Bingham
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Sanky Chan
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Kenneth Draper
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Debidatta Dwibedi
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Chelsea Finn
+                    <sup>1,2</sup>
+                </li>
+                <li>
+                    Pete Florence
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Spencer Goodrich
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Wayne Gramlich
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Torr Hage
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Alexander Herzog
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Jonathan Hoech
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Thinh Nguyen
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Ian Storz
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Baruch Tabanpour
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Leila Takayama
+                    <sup>1,3</sup>
+                </li>
+                <li>
+                    Jonathan Tompson
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Ayzaan Wahid
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Sichun Xu
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Sergey Yaroshenko
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Kevin Zakka
+                    <sup>1</sup>
+                </li>
+                <li>
+                    Tony Zhao
+                    <sup>1,2</sup>
+                <br>
+                <br>
+                <p class="bold">Authors listed in alphabetical order.</p>
+                </li>
                     <br><br>
-                    <sup>1</sup><a href="http://g.co/robotics">
-                        <img src="img/deepmind.png" height="37px"> </a>
+                    <sup>1</sup><a href="http://g.co/robotics"><img src="img/deepmind_color.png" height="26px"></a>&nbsp;&nbsp;
+                    <sup>2</sup><a href="https://irislab.stanford.edu/"><img src="img/stanford.png" height="40px"></a>&nbsp;&nbsp;
+                    <sup>3</sup><strong class="bold">Hoku Labs</strong>
                         
-                    </ul>
+                </ul>
 
             </div>
+
         </div>
 
 
         <div class="row">
             <div class="col-md-4 col-md-offset-4 text-center">
                 <ul class="nav nav-pills nav-justified">
-<!--                     <li>
-                        <a href="assets/">
+                    <li>
+                        <a href="assets/aloha2.pdf">
                         <img src="img/paper_thumb.png" height="60px">
                             <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
-
-                    <li>
-                        <a href="#demo">
-                        <img src="img/palm-e-teaser.png" height="60px">
-                            <h4><strong>Demo</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://ai.googleblog.com/2022/12/rt-1-robotics-transformer-for-real.html">
-                        <image src="img/google-ai-blog-small.png" height="60px">
-                            <h4><strong>Blogpost</strong></h4>
-                        </a>
-                    </li>
                      <li>
-                        <a href="https://github.com/google-research/robotics_transformer">
+                        <a href="https://github.com/">
                         <image src="img/github.png" height="60px">
-                            <h4><strong>Code</strong></h4>
+                            <h4><strong>Repo</strong></h4>
                         </a>                   
-                    </li>  -->
+                    </li> 
+                    <li>
+                        <a href="https://google.com/">
+                        <image src="img/youtube_icon.png" height="60px">
+                            <h4><strong>Video</strong></h4>
+                        </a>                   
+                    </li> 
+                    <li>
+                        <a href="https://google.com/">
+                        <image src="img/docs_icon.png" height="60px">
+                            <h4><strong>Tutorial</strong></h4>
+                        </a>                   
+                    </li> 
                 </ul>
             </div>
         </div>
@@ -120,49 +236,101 @@
         <div class="row">
             
             <div class="col-md-8 col-md-offset-2 col-xs-12">
-                <video id="v0" width="100%" playsinline muted loop autoplay onclick="setAttribute('controls', 'true');">
-                    <source src="videos/palm-e-teaser.mp4" type="video/mp4">
-                </video>		
-
                 <h3>
                     Abstract
                 </h3>
-                <p class="text-justify">
-
+                <p class="text-justify">Diverse demonstration datasets have powered significant advances in robot learning, but the dexterity and scale of such data can be limited by the hardware cost, the hardware robustness, and the ease of teleoperation. We introduce ALOHA 2, an enhanced version of ALOHA that has greater performance, ergonomics, and robustness compared to the original design. To accelerate research in large-scale bimanual manipulation, we open source all hardware designs of ALOHA 2 with a detailed tutorial, together with a MuJoCo model of ALOHA 2 with system identification. 
                 </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <video width="800" autoplay="" muted="" controls="">
+              <source src="https://tonyzhaozh.github.io/aloha/resources/teleop_all.mp4" type="video/mp4">
+            </video>
+            </div>
+        </div>
+        <!-- <div id="image_carousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#image_carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#image_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#image_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#image_carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img class="d-block carousel-image" src="assets/fig1.png" alt="First slide"> 
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>"Bring me the rice chips from the drawer."</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block carousel-image" src="assets/workcell.jpg"/> 
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>"Bring me the green star."</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block carousel-image" src="assets/viperx_pic.jpg"/>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>"Bring me the green star."</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block carousel-image" src="assets/widowx_pic.jpg"/>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>"Bring me the green star."</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" style="max-height:21%; margin-top:21%;" data-bs-target="#image_carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" style="max-height:21%; margin-top:21%;" data-bs-target="#image_carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 col-xs-12">
+                <img class="carousel-image" src="assets/fig1.png"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 col-xs-12">
+                <img class="carousel-image" src="assets/workcell.jpg"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 col-xs-12">
+                <img class="carousel-image" src="assets/viperx_pic.jpg"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2 col-xs-12">
+                <img class="carousel-image" src="assets/widowx_pic.jpg"/>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-8 col-xs-12">
                 <h3>
                     Citation 
                 </h3> 
-                <a href="https://arxiv.org">[arxiv version]</a>
+                <a href="https://arxiv.org/abs/2303.03378">[arxiv version]</a>
                 <div class="form-group col-md-10 col-md-offset-1">
-<!--                     <textarea id="bibtex" class="form-control" readonly>
-@inproceedings{aloha22024,
-    title={ALOHA 2},
-    author={ALOHA 2 Team},
+                <textarea id="bibtex" class="form-control" readonly>
+@article{aloha2team2024aloha2,
+    title={ALOHA 2: An Enhanced Low-Cost Hardware for Bimanual Teleoperation},
+    author={ALOHA 2 Team and Jorge Aldeco and Travis Armstrong and Robert Baruch and Jeff Bingham and Sanky Chan and Kenneth Draper and Debidatta Dwibedi and Chelsea Finn and Pete Florence and Spencer Goodrich and Wayne Gramlich and TorrHage and Alexander Herzog and Jonathan Hoech and Thinh Nguyen and Ian Storz and Baruch Tabanpour and Leila Takayama and Jonathan Tompson and Ayzaan Wahid and Ted Wahrburg and Sichun Xu and Sergey Yaroshenko and Kevin Zakka and Tony Zhao},
+    booktitle={arXiv preprint arXiv:2303.03378},
     year={2024}
-}</textarea> -->
+}</textarea>
                 </div>
             </div>
         </div>
-
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-xs-12">
-                <h3>
-                    Acknowledgements
-                </h3>
-                <p class="text-justify">
-                    The authors would like to thank...
-                </p>
-            </div>
-        </div>
-
-
 
     </div>
 </body>
